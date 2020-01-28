@@ -1,0 +1,17 @@
+{% extends "movies/basis.html" %}
+<!-- {% load crispy_forms_tags % } -->
+{% block content %}
+   <div class = "content-part">
+       <form method ="POST">
+           {% csrf_token %}
+           <fieldset class ="form-group">
+               <legend class = "border-bottom mb-6">Hey there!</legend>
+               {{ form.as_p }}
+           </fieldset>
+           <div class = "form-group">
+               <button type= "submit"> Enrole</button>
+           </div>
+          </form>
+         </div>
+
+{% endblock content %}
